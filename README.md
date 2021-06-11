@@ -1,5 +1,9 @@
 # Django-basic-start-project
+
+
 cheat sheet  >> https://dev.to/ericchapman/my-beloved-django-cheat-sheet-2056
+
+
 Basic setting start project Django 
 ### สร้าง virtualenv
 ```python
