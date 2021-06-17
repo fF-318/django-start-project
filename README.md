@@ -15,6 +15,7 @@ venv\Scripts\activate
 ### install django
 ```python
 pip install django
+pip install Pillow
 ```
 ### สร้าง projact
 ```python
