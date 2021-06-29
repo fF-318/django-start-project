@@ -30,6 +30,23 @@ python manage.py startapp MyWebsite
 INSTALLED_APPS = [
 	'MyWebsite'
 ]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['templates'], #เพิ่ม
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
 TIME_ZONE = 'Asia/Bangkok'
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
