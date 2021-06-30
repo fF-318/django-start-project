@@ -19,11 +19,11 @@ pip install Pillow
 ```
 ### สร้าง projact
 ```python
-django-admin startproject Myproject .
+django-admin startproject myproject .
 ```
 ### สร้าง app 
 ```python
-python manage.py startapp MyWebsite
+python manage.py startapp mywebsite
 ```
 ### settings.py 
 ```python
@@ -34,7 +34,7 @@ INSTALLED_APPS = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'], #เพิ่ม
+        'DIRS': [Path.joinpath(BASE_DIR, 'templates')], #เพิ่ม
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -54,11 +54,11 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'MyWebsite/static')]
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = Path.joinpath(BASE_DIR, 'MyWebsite/static/media')
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'mywebsite/static/media')
 ```
 ### urls.py 
 ```python
