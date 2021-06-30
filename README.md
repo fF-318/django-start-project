@@ -28,7 +28,7 @@ python manage.py startapp mywebsite
 ### settings.py 
 ```python
 INSTALLED_APPS = [
-	'MyWebsite'
+	'mywebsite'
 ]
 
 TEMPLATES = [
