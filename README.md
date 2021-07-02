@@ -16,6 +16,8 @@ venv\Scripts\activate
 ```python
 pip install django
 pip install Pillow
+
+pip install django-crispy-forms
 ```
 ### สร้าง projact
 ```python
@@ -28,7 +30,8 @@ python manage.py startapp mywebsite
 ### settings.py 
 ```python
 INSTALLED_APPS = [
-	'mywebsite'
+	'mywebsite',
+	'crispy_forms'
 ]
 
 TEMPLATES = [
