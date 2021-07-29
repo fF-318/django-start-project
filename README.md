@@ -59,7 +59,7 @@ SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'mywebsite/static')]
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
