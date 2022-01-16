@@ -31,15 +31,15 @@ python manage.py startapp mywebsite
 ```python
 INSTALLED_APPS = [
 	'mywebsite',
-	'crispy_forms'
+
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [Path.joinpath(BASE_DIR, 'templates')], #เพิ่ม
+        'DIRS': [Path.joinpath(BASE_DIR, 'templates')], 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -53,17 +53,18 @@ TEMPLATES = [
 ]
 
 TIME_ZONE = 'Asia/Bangkok'
+
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'mywebsite/static')]
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
 STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = Path.joinpath(BASE_DIR, 'mywebsite/static/media')
+MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
 ```
 ### urls.py 
 ```python
