@@ -16,8 +16,6 @@ venv\Scripts\activate
 ```python
 pip install django
 pip install Pillow
-
-pip install django-crispy-forms
 ```
 ### สร้าง projact
 ```python
