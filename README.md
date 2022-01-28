@@ -88,8 +88,8 @@ urlpatterns = [
 ]
 ```
 ### folder
+`media`
 `static`
-
 `templates`
 ### views.py
 ```python
