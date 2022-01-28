@@ -105,3 +105,29 @@ def index(request):
 `python manage.py createsuperuser`
 
 `python manage.py runserver`
+### Database
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
+### Mysql
+```python
+pip install mysqlclient
+```
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '',
+        'USER': '',
+        'PASSWORD': '',
+        'PORT': '3306',
+        'NAME': ''
+    }
+}
+```
