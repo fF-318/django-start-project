@@ -131,3 +131,11 @@ DATABASES = {
     }
 }
 ```
+
+
+
+### PowerShell with the "Run as Administrator" 
+
+```python
+set-executionpolicy remotesigned
+```
