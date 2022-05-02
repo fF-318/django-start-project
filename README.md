@@ -12,6 +12,11 @@ virtualenv venv
 ```python
 venv\Scripts\activate
 ```
+### Ubuntu
+```python
+source venv/bin/activate
+```
+
 ### install django
 ```python
 pip install django
