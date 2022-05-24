@@ -113,6 +113,10 @@ def index(request):
 
 `python manage.py collectstatic`
 
+`pip freeze > requirements.txt`
+
+`pip install -r requirements.txt`
+
 ### Database
 ```python
 DATABASES = {
