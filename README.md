@@ -151,3 +151,12 @@ DATABASES = {
 ```python
 set-executionpolicy remotesigned
 ```
+
+### dumpdata 
+
+```python
+python manage.py dumpdata blog >myapp.json
+```
+```python
+python manage.py loaddata myapp.json
+```
