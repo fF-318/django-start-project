@@ -156,6 +156,8 @@ set-executionpolicy remotesigned
 
 ```python
 python manage.py dumpdata blog >myapp.json
+
+python -Xutf8 ./manage.py dumpdata > data.json
 ```
 ```python
 python manage.py loaddata myapp.json
