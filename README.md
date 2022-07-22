@@ -160,5 +160,6 @@ python manage.py dumpdata blog >myapp.json
 python -Xutf8 ./manage.py dumpdata > data.json
 ```
 ```python
+หากเกิดปัญหาให้ save เป็น utf-8
 python manage.py loaddata myapp.json
 ```
