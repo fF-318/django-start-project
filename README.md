@@ -155,11 +155,13 @@ set-executionpolicy remotesigned
 ### dumpdata 
 
 ```python
-python manage.py dumpdata blog >myapp.json
-
+python manage.py dumpdata > data.json
+or
+python manage.py dumpdata blog > data.json
+fixerror
 python -Xutf8 ./manage.py dumpdata > data.json
 ```
 ```python
 หากเกิดปัญหาให้ save เป็น utf-8
-python manage.py loaddata myapp.json
+python manage.py loaddata data.json
 ```
