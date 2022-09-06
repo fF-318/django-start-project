@@ -120,6 +120,8 @@ def index(request):
 
 `pip install -r requirements.txt`
 
+`python -m pip install -U --force pip`
+
 ### Database
 ```python
 DATABASES = {
