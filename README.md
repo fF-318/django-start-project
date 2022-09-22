@@ -110,6 +110,8 @@ def index(request):
 
 `python manage.py migrate`
 
+`python manage.py migrate --fake`
+
 `python manage.py createsuperuser`
 
 `python manage.py runserver`
